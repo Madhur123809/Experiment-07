@@ -50,66 +50,131 @@ ALGORITHM
 Algorithm 1: Print Numbers 1 to N
 
 Start.
+
 Accept input value of n from the user.
+
 Initialize i = 1.
+
 While i <= n, repeat steps 5 and 6.
+
 Print the value of i.
+
 Increment i by 1 (i = i + 1).
+
 Stop.
 
 Algorithm 2: Factorial of a Number
 
+
 Start.
+
 Accept input value of n from the user.
+
 Initialize fact = 1.
+
 While n > 0, repeat steps 5 and 6.
+
+
 Multiply fact by n (fact = fact * n).
+
 Decrement n by 1 (n = n - 1).
+
 Print fact.
+
 Stop.
+
+
 
 Algorithm 3: Fibonacci Series (N Terms)
 
+
+
 Start.
+
 Accept number of terms n.
+
 Initialize a = 0, b = 1, i = 1.
+
 While i <= n, repeat steps 5 to 7.
+
 Print a.
+
 Set c = a + b, a = b, b = c.
+
 Increment i by 1.
+
 Stop.
+
+
 
 Algorithm 4: Reverse a Number
 
+
+
 Start.
+
 Accept number num from the user.
+
 Initialize rev = 0.
+
 While num > 0, repeat steps 5 to 7.
+
 Extract digit = num % 10.
+
 Update rev = rev * 10 + digit.
+
 Remove last digit: num = num // 10.
+
 Print rev.
+
 Stop.
+
+
 
 Algorithm 5: Palindrome Check (Number)
 
+
+
 Start.
+
 Accept number num from the user.
+
 Store temp = num, initialize rev = 0.
+
 Reverse num into rev using the while loop (same as Algorithm 4).
+
 If temp == rev, print "Palindrome". Else print "NOT Palindrome".
+
 Stop.
+
+
 
 Algorithm 6: Searching an Element in a List
 
+
+
 Start.
+
+
 Define list nums = [10, 20, 30, 40, 50] and accept key from the user.
+
 Initialize index i = 0.
+
+
+
 While i < length of nums, repeat steps 5 and 6.
+
 If nums[i] == key, print index and break.
+
+
 Increment i by 1.
+
 If loop ends without break (else block), print "element not found".
+
+
 Stop.
+
+
 
 
 CONCLUSION
