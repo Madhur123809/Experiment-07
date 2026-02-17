@@ -24,22 +24,41 @@ The condition in a while loop can be any valid Python expression that returns a 
 The execution flow of a while loop follows these steps:
 
 The condition is evaluated first (entry-controlled).
+
 If the condition is True, the loop body executes.
+
+
+
 After the loop body executes, control goes back to re-evaluate the condition.
+
 If the condition is False, the loop terminates.
+
 Control passes to the first statement following the while loop.
 
+
+
 4. Loop Control Statements
+
 Python provides special statements to control the behavior of loops during execution.
+
 break Statement: The break statement immediately terminates the loop regardless of the condition. When break is encountered inside a loop, Python exits the loop and execution continues with the first statement after the loop body. This is used in scenarios such as searching for an element in a list where we exit as soon as we find the target.
 continue Statement: The continue statement skips the rest of the loop body for the current iteration and jumps back to re-evaluate the condition. It is used when we want to skip certain iterations based on a condition, such as skipping even numbers and printing only odd numbers.
 else Clause with while: Python allows an optional else clause with the while loop. The else block executes when the loop condition becomes False naturally (not when terminated by break). This is particularly useful in search operations where we want to handle the case when an element is not found.
+
 5. Practical Applications Covered in This Experiment
+
 a) Printing Numbers 1 to N: A basic while loop that initializes a counter variable and increments it by 1 on each iteration until it exceeds the user-defined limit N. This demonstrates the basic working of entry-controlled loops.
-b) Factorial Computation: The factorial of a number n (written as n!) is the product of all positive integers from 1 to n. The while loop multiplies the result by the current value of n and decrements n by 1 on every iteration until n reaches 0. For example, 5! = 5 x 4 x 3 x 2 x 1 = 120.
-c) Fibonacci Series: The Fibonacci sequence is a series where each number is the sum of the two preceding ones: 0, 1, 1, 2, 3, 5, 8, 13, ... The while loop updates two variables a and b such that a becomes b and b becomes the sum of the previous a and b. Two approaches are implemented: printing up to N terms and printing up to a given limit value.
-d) Reversing a Number: The last digit of a number is extracted using the modulo operator (%). It is appended to the reversed number by multiplying the current reversed value by 10 and adding the digit. The original number is then integer-divided by 10. This process repeats until all digits are extracted.
-e) Palindrome Checking: A palindrome is a number or string that reads the same forwards and backwards (e.g., 121, 'madam', 'icici'). For numbers, the reversed number is compared with the original. For strings, the two-pointer technique is used with the while loop to compare characters from both ends simultaneously.
+
+b) Factorial Computation: The factorial of a number n (written as n!) is the product of all positive integers from 1 to n. The while loop multiplies the result by the current value of n and 
+decrements n by 1 on every iteration until n reaches 0. For example, 5! = 5 x 4 x 3 x 2 x 1 = 120.
+c) Fibonacci Series: The Fibonacci sequence is a series where each number is the sum of the two preceding ones: 0, 1, 1, 2, 3, 5, 8, 13, ... The while loop updates two variables a and b such 
+that a becomes b and b becomes the sum of the previous a and b. Two approaches are implemented: printing up to N terms and printing up to a given limit value.
+
+d) Reversing a Number: The last digit of a number is extracted using the modulo operator (%). It is appended to the reversed number by multiplying the current reversed value by 10 and adding 
+the digit. The original number is then integer-divided by 10. This process repeats until all digits are extracted.
+
+e) Palindrome Checking: A palindrome is a number or string that reads the same forwards and backwards (e.g., 121, 'madam', 'icici'). For numbers, the reversed number is compared with the 
+original. For strings, the two-pointer technique is used with the while loop to compare characters from both ends simultaneously.
 f) Counting Digits: The while loop counts the number of digits in an integer by repeatedly dividing the number by 10 and incrementing a counter until the number becomes 0. For example, 5445811 has 7 digits.
 g) Searching in a List: Linear search is implemented using a while loop that traverses the list from the beginning and compares each element with the key. If found, the index is reported and the loop breaks. The else clause handles the case where the element is not found.
 h) Printing Odd Numbers using continue: The continue statement is used to skip even numbers inside the while loop. The loop increments i, checks if it is even, and if so, skips the print statement using continue. Only odd values of i are printed.
